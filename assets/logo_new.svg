@@ -1,0 +1,79 @@
+<svg viewBox="0 0 215 80" xmlns="http://www.w3.org/2000/svg" dir="ltr">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="emblemGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#009ee0" />     <!-- Brand Blue -->
+      <stop offset="50%" stop-color="#7b2cbf" />    <!-- Purple -->
+      <stop offset="100%" stop-color="#e22a7a" />   <!-- Brand Pink -->
+    </linearGradient>
+    
+    <!-- Mask for the Gear - full closed gear with center cutout -->
+    <mask id="gearMask">
+      <rect x="0" y="0" width="80" height="80" fill="white" />
+      <circle cx="40" cy="40" r="18" fill="black" />
+    </mask>
+  </defs>
+
+  <!-- EMBLEM -->
+  <!-- Gear Group with Mask -->
+  <g mask="url(#gearMask)">
+    <!-- Outer teeth (overlapping rounded rectangles rotated) -->
+    <rect x="35" y="8" width="10" height="64" rx="3" fill="url(#emblemGrad)" />
+    <rect x="35" y="8" width="10" height="64" rx="3" fill="url(#emblemGrad)" transform="rotate(30 40 40)" />
+    <rect x="35" y="8" width="10" height="64" rx="3" fill="url(#emblemGrad)" transform="rotate(60 40 40)" />
+    <rect x="35" y="8" width="10" height="64" rx="3" fill="url(#emblemGrad)" transform="rotate(90 40 40)" />
+    <rect x="35" y="8" width="10" height="64" rx="3" fill="url(#emblemGrad)" transform="rotate(120 40 40)" />
+    <rect x="35" y="8" width="10" height="64" rx="3" fill="url(#emblemGrad)" transform="rotate(150 40 40)" />
+    <!-- Main body ring -->
+    <circle cx="40" cy="40" r="23" fill="url(#emblemGrad)" />
+  </g>
+
+  <!-- PCB Emblem (detailed) -->
+  <circle cx="40" cy="40" r="17.5" fill="#0a1628" />
+  <circle cx="40" cy="40" r="16.5" fill="none" stroke="#009ee0" stroke-width="0.7" stroke-dasharray="2,2.5" opacity="0.3" />
+  <g>
+    <path d="M 35,27 L 29,38 H 35 L 29,51" fill="none" stroke="#009ee0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+    <rect x="43" y="33" width="10" height="10" rx="1.5" fill="none" stroke="#009ee0" stroke-width="1.5" />
+    <rect x="45.5" y="35.5" width="5" height="5" rx="0.5" fill="#009ee0" opacity="0.5" />
+    <line x1="40" y1="35.5" x2="43" y2="35.5" stroke="#009ee0" stroke-width="0.9" />
+    <line x1="40" y1="38" x2="43" y2="38" stroke="#009ee0" stroke-width="0.9" />
+    <line x1="40" y1="40.5" x2="43" y2="40.5" stroke="#009ee0" stroke-width="0.9" />
+    <line x1="53" y1="35.5" x2="56" y2="35.5" stroke="#009ee0" stroke-width="0.9" />
+    <line x1="53" y1="38" x2="56" y2="38" stroke="#009ee0" stroke-width="0.9" />
+    <line x1="53" y1="40.5" x2="56" y2="40.5" stroke="#009ee0" stroke-width="0.9" />
+    <line x1="45.5" y1="30" x2="45.5" y2="33" stroke="#009ee0" stroke-width="0.9" />
+    <line x1="48" y1="30" x2="48" y2="33" stroke="#009ee0" stroke-width="0.9" />
+    <line x1="50.5" y1="30" x2="50.5" y2="33" stroke="#009ee0" stroke-width="0.9" />
+    <line x1="45.5" y1="43" x2="45.5" y2="46" stroke="#009ee0" stroke-width="0.9" />
+    <line x1="48" y1="43" x2="48" y2="46" stroke="#009ee0" stroke-width="0.9" />
+    <line x1="50.5" y1="43" x2="50.5" y2="46" stroke="#009ee0" stroke-width="0.9" />
+    <path d="M 27,29 L 32,33 V 38" fill="none" stroke="#009ee0" stroke-width="0.9" stroke-linecap="round" />
+    <circle cx="27" cy="29" r="1.2" fill="#009ee0" />
+    <path d="M 26,47 L 31,43 H 36" fill="none" stroke="#009ee0" stroke-width="0.9" stroke-linecap="round" />
+    <circle cx="26" cy="47" r="1.2" fill="#009ee0" />
+    <path d="M 46,24 V 28" fill="none" stroke="#009ee0" stroke-width="0.9" stroke-linecap="round" />
+    <circle cx="46" cy="24" r="1.2" fill="#009ee0" />
+    <path d="M 44,54 V 49 L 47,46" fill="none" stroke="#009ee0" stroke-width="0.9" stroke-linecap="round" />
+    <circle cx="44" cy="54" r="1.2" fill="#009ee0" />
+    <path d="M 55,42 H 53" fill="none" stroke="#009ee0" stroke-width="0.9" stroke-linecap="round" />
+    <circle cx="55" cy="42" r="1" fill="#009ee0" />
+    <rect x="25" y="35" width="3" height="1.8" rx="0.3" fill="none" stroke="#009ee0" stroke-width="0.7" />
+    <rect x="38" y="50" width="1.8" height="3" rx="0.3" fill="none" stroke="#009ee0" stroke-width="0.7" />
+  </g>
+
+  <!-- TEXT SECTION -->
+  <!-- MORMASS Text -->
+  <text x="82" y="44" font-family="'Poppins', 'Inter', sans-serif" font-weight="700" font-size="30" fill="#009ee0" class="logo-text-adapt">MORMASS</text>
+
+  <!-- Data Line Wave over REX -->
+  <path d="M 138,20 C 148,6 160,26 172,13 C 182,1 192,21 200,10" fill="none" stroke="#009ee0" stroke-width="2" stroke-linecap="round" class="logo-stroke-adapt" />
+  <circle cx="138" cy="20" r="3" fill="#e22a7a" />
+  <circle cx="152" cy="11" r="2.5" fill="#009ee0" />
+  <circle cx="168" cy="17" r="2.5" fill="#e22a7a" />
+  <circle cx="184" cy="7" r="3" fill="#009ee0" />
+  <circle cx="200" cy="10" r="3.5" fill="#e22a7a" />
+
+  <!-- ENGINEERING & CONSULTING Stacked Text -->
+  <text x="82" y="59" font-family="'Inter', sans-serif" font-weight="700" font-size="9" letter-spacing="1.5" fill="#009ee0" class="logo-subtext-adapt">ENGINEERING</text>
+  <text x="82" y="71" font-family="'Inter', sans-serif" font-weight="700" font-size="9" letter-spacing="1.5" fill="#009ee0" class="logo-subtext-adapt">CONSULTING</text>
+</svg>
