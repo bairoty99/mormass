@@ -11,7 +11,8 @@ document.addEventListener('DOMContentLoaded', () => {
             nav_partners: 'Partners',
             nav_customers: 'Customers',
             nav_contact: 'Contact Us',
-            hero_title: 'Engineering Experts for<br><span class="text-accent" data-i18n="hero_title_accent">Pharmaceutical Manufacturing</span>',
+            hero_company_name: 'MorMass For Studies And Consultation O.P.L.L.C',
+            hero_title_prefix: 'Engineering Experts for',
             hero_title_accent: 'Pharmaceutical Manufacturing',
             hero_subtitle: 'Leading engineering consulting firm with over 26 years of experience across the Middle East. Trusted partner for the Pharma, Cosmetics, Herbal, and Food industries.',
             hero_cta_primary: 'Get in Touch',
@@ -19,8 +20,8 @@ document.addEventListener('DOMContentLoaded', () => {
             stat_years: 'Years Experience',
             stat_partners: 'Trusted Partners',
             stat_gmp: 'GMP Compliant',
-            about_title: 'About MorMass LLC',
-            about_lead: 'MorMass LLC is a premier engineering consulting firm specializing in manufacturing solutions, with over 26 years of experience in the pharmaceutical sector.',
+            about_title: 'About MorMass O.P.L.L.C',
+            about_lead: 'MorMass O.P.L.L.C is a premier engineering consulting firm specializing in manufacturing solutions, with over 26 years of experience in the pharmaceutical sector.',
             about_desc: 'Through strategic partnerships with globally recognized machinery manufacturers, combined with a strong regional presence and a highly skilled team, we deliver a wide range of advanced equipment and services across the Middle East. Our expertise supports industries including pharmaceuticals, cosmetics, herbal products, and food production.',
             about_wwd_title: 'What We Do',
             about_wwd_p1: 'We offer end-to-end support across the full lifecycle of industrial projects—from initial analysis and design to implementation, validation, and final acceptance. Our services also extend to quality compliance, performance optimization, and advanced technical troubleshooting.',
@@ -111,7 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
             form_message: 'Your Message',
             form_message_ph: 'Type your message here...',
             form_submit: 'Request Consultation',
-            footer_copy: '© 2026 MorMass LLC. All rights reserved.'
+            footer_copy: '© 2026 MorMass O.P.L.L.C. All rights reserved.'
         },
         ar: {
             lang_label: 'EN',
@@ -122,7 +123,8 @@ document.addEventListener('DOMContentLoaded', () => {
             nav_partners: 'شركاؤنا',
             nav_customers: 'عملاؤنا',
             nav_contact: 'تواصل معنا',
-            hero_title: 'خبراء هندسيون في<br><span class="text-accent" data-i18n="hero_title_accent">التصنيع الدوائي</span>',
+            hero_company_name: 'مور ماس للدراسات والاستشارات',
+            hero_title_prefix: 'خبراء هندسيون في',
             hero_title_accent: 'التصنيع الدوائي',
             hero_subtitle: 'شركة استشارات هندسية رائدة بخبرة تزيد عن 26 عامًا في الشرق الأوسط. شريك موثوق في قطاعات الأدوية، ومستحضرات التجميل، والأعشاب، والصناعات الغذائية.',
             hero_cta_primary: 'تواصل معنا',
@@ -130,8 +132,8 @@ document.addEventListener('DOMContentLoaded', () => {
             stat_years: 'سنوات خبرة',
             stat_partners: 'شريك موثوق',
             stat_gmp: 'متوافق مع GMP',
-            about_title: 'عن MorMass LLC',
-            about_lead: 'MorMass LLC هي شركة استشارات هندسية متميزة متخصصة في حلول التصنيع، بخبرة تزيد عن 26 عامًا في القطاع الدوائي.',
+            about_title: 'عن MorMass O.P.L.L.C',
+            about_lead: 'MorMass O.P.L.L.C هي شركة استشارات هندسية متميزة متخصصة في حلول التصنيع، بخبرة تزيد عن 26 عامًا في القطاع الدوائي.',
             about_desc: 'من خلال شراكات استراتيجية مع مصنّعي آلات معترف بهم عالميًا، إلى جانب حضور إقليمي قوي وفريق عمل عالي الكفاءة، نقدم مجموعة واسعة من المعدات والخدمات المتقدمة في جميع أنحاء الشرق الأوسط. تشمل خبراتنا قطاعات الأدوية، ومستحضرات التجميل، والمنتجات العشبية، والإنتاج الغذائي.',
             about_wwd_title: 'ماذا نفعل',
             about_wwd_p1: 'نقدم دعمًا شاملاً عبر دورة حياة المشاريع الصناعية بالكامل — من التحليل الأولي والتصميم إلى التنفيذ والتأهيل والقبول النهائي. تمتد خدماتنا أيضًا إلى الامتثال للجودة وتحسين الأداء واستكشاف الأخطاء التقنية المتقدمة.',
@@ -222,7 +224,7 @@ document.addEventListener('DOMContentLoaded', () => {
             form_message: 'رسالتك',
             form_message_ph: 'اكتب رسالتك هنا...',
             form_submit: 'طلب استشارة',
-            footer_copy: '© 2026 MorMass LLC. جميع الحقوق محفوظة.'
+            footer_copy: '© 2026 MorMass O.P.L.L.C. جميع الحقوق محفوظة.'
         }
     };
 
@@ -612,8 +614,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const metaDesc = document.querySelector('meta[name="description"]');
         if (metaDesc) {
             metaDesc.setAttribute('content', lang === 'ar'
-                ? 'MorMass LLC هي شركة استشارات هندسية رائدة، متخصصة في مجال التصنيع، بخبرة تزيد عن 20 عامًا في الصناعة الدوائية.'
-                : 'MorMass LLC is a leading engineering consulting firm, specialized in the manufacturing domain, with over 20 years of experience in the pharmaceutical industry.'
+                ? 'MorMass O.P.L.L.C هي شركة استشارات هندسية رائدة، متخصصة في مجال التصنيع، بخبرة تزيد عن 20 عامًا في الصناعة الدوائية.'
+                : 'MorMass O.P.L.L.C is a leading engineering consulting firm, specialized in the manufacturing domain, with over 20 years of experience in the pharmaceutical industry.'
             );
         }
     }

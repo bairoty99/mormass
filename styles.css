@@ -260,6 +260,17 @@ ul {
     transform: scale(1.02);
 }
 
+.logo-img {
+    height: 48px;
+    width: auto;
+    display: block;
+    transition: var(--transition);
+}
+
+.logo:hover .logo-img {
+    transform: scale(1.02);
+}
+
 .logo-text-adapt {
     transition: fill 0.3s ease;
     text-anchor: start !important;
@@ -393,6 +404,22 @@ ul {
     font-size: 4rem;
     color: #fff;
     margin-bottom: 1.5rem;
+    line-height: 1.15;
+}
+
+.hero h1 > span:not(.hero-company-name) {
+    color: var(--accent);
+}
+
+.hero-company-name {
+    display: block;
+    font-size: 3.25rem;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 1.5px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    line-height: 1.1;
 }
 
 .hero-subtitle {
@@ -827,6 +854,12 @@ ul {
 .footer-logo-svg {
     height: 60px;
     width: auto;
+}
+
+.footer-logo-img {
+    height: 60px;
+    width: auto;
+    display: block;
 }
 
 .social-links {
