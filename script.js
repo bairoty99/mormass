@@ -237,11 +237,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     
     function updateNavbar() {
-        if (window.scrollY > 50 || currentViewId !== '#view-home') {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
-        }
+        const scrolled = window.scrollY > 50 || currentViewId !== '#view-home';
+        navbar.classList.toggle('scrolled', scrolled);
     }
 
     window.addEventListener('scroll', updateNavbar);

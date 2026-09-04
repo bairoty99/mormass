@@ -210,17 +210,22 @@ ul {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: transparent;
+    background: rgba(10, 25, 47, 0.7); /* Dark navy, semi-transparent (glassmorphism base) */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     padding: 1.5rem 0;
     z-index: 1000;
     transition: var(--transition);
 }
 
 .navbar.scrolled {
-    background-color: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     padding: 1rem 0;
-    box-shadow: var(--shadow-sm);
+    box-shadow: 0 10px 30px -10px rgba(0,0,0,0.05);
 }
 
 .nav-container {
@@ -261,14 +266,38 @@ ul {
 }
 
 .logo-img {
-    height: 48px;
+    height: 44px;
     width: auto;
     display: block;
-    transition: var(--transition);
+    transition: opacity 0.3s ease, transform var(--transition), filter 0.3s ease;
 }
 
 .logo:hover .logo-img {
-    transform: scale(1.02);
+    transform: scale(1.04);
+}
+
+/* Default state: light version visible (transparent navbar over dark hero) */
+.logo-img-light {
+    display: block;
+    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.35));
+}
+
+.logo-img-color {
+    display: none;
+}
+
+/* When navbar is scrolled (white background) - swap to color version */
+.navbar.scrolled .logo-img-light {
+    display: none;
+}
+
+.navbar.scrolled .logo-img-color {
+    display: block;
+    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.08));
+}
+
+.navbar.scrolled .logo:hover .logo-img-color {
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.12));
 }
 
 .logo-text-adapt {
@@ -857,9 +886,10 @@ ul {
 }
 
 .footer-logo-img {
-    height: 60px;
+    height: 64px;
     width: auto;
     display: block;
+    filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.5));
 }
 
 .social-links {
@@ -1116,6 +1146,14 @@ html[dir="rtl"] .footer-bottom {
     
     .logo {
         font-size: 1.25rem;
+    }
+
+    .logo-img {
+        height: 44px;
+    }
+
+    .footer-logo-img {
+        height: 56px;
     }
     
     .hero {
@@ -2133,10 +2171,26 @@ html[dir="rtl"] .footer-bottom {
 }
 
 /* Glassmorphism Navbar */
+.navbar {
+    background: rgba(10, 25, 47, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
 .navbar.scrolled {
     background: rgba(255, 255, 255, 0.75);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     box-shadow: 0 10px 30px -10px rgba(0,0,0,0.05);
+}
+
+.navbar.scrolled .logo {
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 12px;
+    padding: 6px 14px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
 }

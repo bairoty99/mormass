@@ -12,14 +12,18 @@
     <!-- Phosphor Icons -->
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <!-- Custom Styles -->
-    <link rel="stylesheet" href="styles.css?v=2.0">
+    <link rel="stylesheet" href="styles.css?v=2.2">
+    <!-- Preload both logo versions for smooth swap -->
+    <link rel="preload" as="image" href="assets/mormass-logo-light.png">
+    <link rel="preload" as="image" href="assets/mormass-logo-color.png">
 </head>
 <body>
     <!-- Navigation -->
     <nav id="navbar" class="navbar">
         <div class="container nav-container">
             <a href="#" class="logo" aria-label="MorMass O.P.L.L.C - Engineering Consulting">
-                <img src="assets/last-mormass-logo.svg" alt="MorMass O.P.L.L.C - Engineering Consulting" class="logo-img">
+                <img src="assets/mormass-logo-light.png" alt="MorMass O.P.L.L.C - Engineering Consulting" class="logo-img logo-img-light" width="322" height="140">
+                <img src="assets/mormass-logo-color.png" alt="MorMass O.P.L.L.C - Engineering Consulting" class="logo-img logo-img-color" width="322" height="140">
             </a>
             <ul class="nav-links">
                 <li><a href="#view-home" data-view="view-home" data-i18n="nav_home" class="active-nav">Home</a></li>
@@ -456,7 +460,7 @@
         <div class="container">
             <div class="footer-bottom">
                 <div class="footer-logo" aria-label="MorMass O.P.L.L.C - Engineering Consulting">
-                    <img src="assets/last-mormass-logo.svg" alt="MorMass O.P.L.L.C - Engineering Consulting" class="logo-img footer-logo-img">
+                    <img src="assets/mormass-logo-light.png" alt="MorMass O.P.L.L.C - Engineering Consulting" class="logo-img footer-logo-img" width="322" height="140">
                 </div>
                 <p data-i18n="footer_copy">&copy; 2026 MorMass O.P.L.L.C. All rights reserved.</p>
                 <div class="social-links">
